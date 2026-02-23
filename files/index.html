@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Impact — Paris</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      :root {
+        --bg: #f8f7f4;
+        --ink: #0c0c0b;
+        --rule: #ccc9c2;
+        --px: 52px;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ── PAGE ───────────────────────────────────────────── */
+      .page {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 0 var(--px);
+        min-height: 100vh;
+        /* max-width: 1440px;
+      margin: 0 auto; */
+      }
+
+      /* ── HERO TITLE ─────────────────────────────────────── */
+      .hero {
+        margin-top: 18px;
+      }
+
+      .container {
+        display: flex;
+        flex: 2;
+        justify-content: space-between;
+        gap: 64px;
+        margin-top: 110px;
+      }
+
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right {
+        position: relative;
+        top: 125px;
+        width: 50%;
+      }
+
+      /* Tagline */
+      .tagline {
+        font-family: "Instrument Serif", Georgia, serif;
+        font-style: italic;
+        font-size: clamp(1.125rem, 0.9816rem + 0.5882vw, 1.375rem);
+        line-height: 1.6;
+        color: var(--ink);
+        letter-spacing: 0.005em;
+        padding-top: 2px;
+      }
+
+      /* Right col */
+      .right-col {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Chapter row ─ sits above the first rule */
+      .chapter-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .chapter-label {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--ink);
+        margin-bottom: 8px;
+      }
+
+      .chapter-name {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: clamp(1rem, 0.9283rem + 0.2941vw, 1.125rem);
+        font-weight: bold;
+        color: var(--ink);
+        letter-spacing: -0.01em;
+      }
+
+      .voir-chapitres {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: clamp(1rem, 0.9283rem + 0.2941vw, 1.125rem);
+        font-weight: bold;
+        color: var(--ink);
+        letter-spacing: -0.01em;
+        cursor: pointer;
+        padding-bottom: 0;
+      }
+
+      /* Menu */
+      .menu-col {
+        padding-top: 115px;
+      }
+
+      .menu-title {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: clamp(1rem, 0.8566rem + 0.5882vw, 1.25rem);
+        letter-spacing: 0.065em;
+        text-transform: uppercase;
+        color: var(--ink);
+      }
+
+      .menu-sub {
+        font-family: "Instrument Serif", Georgia, serif;
+        font-style: italic;
+        font-size: clamp(0.875rem, 0.8033rem + 0.2941vw, 1rem);
+        color: var(--ink);
+        margin-top: 3px;
+      }
+
+      /* Details col */
+      .details-col {
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Hours + Address row  */
+      .hours-addr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .hours,
+      .address {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: clamp(1rem, 0.9283rem + 0.2941vw, 1.125rem);
+        letter-spacing: 0.055em;
+        text-transform: uppercase;
+        color: var(--ink);
+        line-height: 1.65;
+      }
+
+      /* CTA row */
+      .cta-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding-top: 26px;
+      }
+
+      .cta,
+      .cta-arrow {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: clamp(1rem, 1rem + 0vw, 1rem);
+        font-weight: bold;
+        color: var(--ink);
+        text-decoration: none;
+        letter-spacing: -0.005em;
+        cursor: pointer;
+      }
+
+      .cta:hover,
+      .cta-arrow:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      .cta-arrow {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+
+      /* ── FOOTER ─────────────────────────────────────────── */
+      .footer {
+        margin-top: 60px;
+        padding-top: 56px;
+        padding-bottom: 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .footer-insta {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink);
+        cursor: pointer;
+      }
+
+      .footer-credits {
+        font-family: "DM Sans", Helvetica, sans-serif;
+        font-size: clamp(0.875rem, 0.7316rem + 0.5882vw, 1.125rem);
+        font-weight: bold;
+        color: var(--ink);
+        letter-spacing: -0.01em;
+        cursor: pointer;
+      }
+
+      .footer-credits:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1075px) {
+        .container {
+          flex-direction: column;
+          margin-top: 45px;
+          gap: 254px;
+        }
+
+        .right {
+          position: static;
+          width: 100%;
+          margin-top: 36px;
+        }
+
+        .menu-col {
+          padding-top: 36px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .footer {
+          flex-direction: column;
+          align-items: center;
+          gap: 31px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .cta-arrow span {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HERO -->
+      <div class="hero">
+        <img
+          src="/Assets/DOUBLE_IMPACT_VERTICAL_BLANC.svg"
+          alt="Double Impact Restaurant Paris"
+          width="100%"
+          height="auto"
+        />
+      </div>
+
+      <!-- container -->
+      <div class="container">
+        <div class="left">
+          <p class="tagline">
+            La Cuisine C&rsquo;est Avant Tout Une Histoire De<br />
+            Ressenti Plus Que De Go&ucirc;t.<br />
+            C&rsquo;est Tous Nos Sens Qui Sont En Alerte.
+          </p>
+          <div class="menu-col">
+            <div class="menu-title">Menu Unique &mdash; 95&euro;</div>
+            <div class="menu-sub">7 Services</div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="right-col">
+            <div class="chapter-row">
+              <div>
+                <div class="chapter-label">Chapitre Actuel</div>
+                <div class="chapter-name">0. Prologue</div>
+              </div>
+              <div class="voir-chapitres"><a href="/Pages/chapitres.html">Voir tous les chapitres</a></div>
+            </div>
+          </div>
+          <div class="details-col">
+            <div class="hours-addr">
+              <div class="hours">Mar &mdash; Dim<br />19H &mdash; 22H30</div>
+              <div class="address">57 Rue Claude Rodier<br />Paris, 75009</div>
+            </div>
+
+            <div class="cta-row">
+              <a class="cta" href="#">R&eacute;server</a>
+              <a class="cta-arrow" href="#"
+                >Se rendre au restaurant <span>&nbsp;&#x2192;</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <span class="footer-insta">@doubleimpact.paris</span>
+        <a href="/Pages/credits.html"><span class="footer-credits">Cr&eacute;dits</span></a>
+      </footer>
+    </div>
+  </body>
+</html>
