@@ -1,0 +1,231 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 52px;
+  min-height: 100vh;
+  background: #f8f7f4;
+  color: #0c0c0b;
+}
+
+/* ── HERO TITLE ─────────────────────────────────────── */
+.hero {
+  margin-top: 18px;
+}
+
+.container {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  gap: 64px;
+  margin-top: 110px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  position: relative;
+  top: 125px;
+  width: 50%;
+}
+
+/* Tagline */
+.tagline {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.125rem, 0.9816rem + 0.5882vw, 1.375rem);
+  line-height: 1.6;
+  color: #0c0c0b;
+  letter-spacing: 0.005em;
+  padding-top: 2px;
+}
+
+/* Right col */
+.rightCol {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chapter row */
+.chapterRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc9c2;
+}
+
+.chapterLabel {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #0c0c0b;
+  margin-bottom: 8px;
+}
+
+.chapterName {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: clamp(1rem, 0.9283rem + 0.2941vw, 1.125rem);
+  font-weight: bold;
+  color: #0c0c0b;
+  letter-spacing: -0.01em;
+}
+
+.voirChapitres {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: clamp(1rem, 0.9283rem + 0.2941vw, 1.125rem);
+  font-weight: bold;
+  color: #0c0c0b;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  padding-bottom: 0;
+}
+
+/* Menu */
+.menuCol {
+  padding-top: 115px;
+}
+
+.menuTitle {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: clamp(1rem, 0.8566rem + 0.5882vw, 1.25rem);
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: #0c0c0b;
+}
+
+.menuSub {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(0.875rem, 0.8033rem + 0.2941vw, 1rem);
+  color: #0c0c0b;
+  margin-top: 3px;
+}
+
+/* Details col */
+.detailsCol {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hours + Address row */
+.hoursAddr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ccc9c2;
+}
+
+.hours,
+.address {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: clamp(1rem, 0.9283rem + 0.2941vw, 1.125rem);
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: #0c0c0b;
+  line-height: 1.65;
+}
+
+/* CTA row */
+.ctaRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 26px;
+}
+
+.cta,
+.ctaArrow {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #0c0c0b;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+  cursor: pointer;
+}
+
+.cta:hover,
+.ctaArrow:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.ctaArrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* ── FOOTER ─────────────────────────────────────────── */
+.footer {
+  margin-top: 60px;
+  padding-top: 56px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footerInsta {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0c0c0b;
+  cursor: pointer;
+}
+
+.footerCredits {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: clamp(0.875rem, 0.7316rem + 0.5882vw, 1.125rem);
+  font-weight: bold;
+  color: #0c0c0b;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+}
+
+.footerCredits:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1075px) {
+  .container {
+    flex-direction: column;
+    margin-top: 45px;
+    gap: 254px;
+  }
+
+  .right {
+    position: static;
+    width: 100%;
+    margin-top: 36px;
+  }
+
+  .menuCol {
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+  }
+
+  .ctaArrowText {
+    display: none;
+  }
+}
