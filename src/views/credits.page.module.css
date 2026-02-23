@@ -1,0 +1,153 @@
+.wrapper {
+  background: #0a0a0a;
+  color: #fafaf9;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── FIXED NAV ───────────────────────────── */
+.navBack {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  padding: 48px 48px 30px;
+  z-index: 100;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fafaf9;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.backArrow {
+  font-size: 18px;
+}
+
+.backText {
+  /* used for responsive hiding */
+}
+
+.navLabel {
+  position: relative;
+  left: -50%;
+  transform: translateX(50%);
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fafaf9;
+}
+
+/* ── FIXED FOOTER (bottom-left) ─────────────────────── */
+.footerInsta {
+  position: fixed;
+  bottom: 28px;
+  left: 52px;
+  z-index: 100;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fafaf9;
+}
+
+/* ── SCROLLABLE CONTENT ─────────────────────────────── */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 52px 100px;
+  min-height: 100vh;
+}
+
+/* ── HERO TITLE ─────────────────────────────────────── */
+.heroTitle {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  color: #fafaf9;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* ── SECTION ────────────────────────────────────────── */
+.section {
+  max-width: 680px;
+  width: 100%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fafaf9;
+  margin-bottom: 24px;
+}
+
+.sectionList {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fafaf9;
+  letter-spacing: 0.01em;
+}
+
+/* ── IMAGE ──────────────────────────────────────────── */
+.sectionImage {
+  max-width: 266px;
+  width: 100%;
+  margin: 0 auto 72px;
+  transform: rotate(-1.82deg);
+}
+
+.sectionImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+.img2 {
+  transform: rotate(1.82deg);
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────── */
+@media (max-width: 568px) {
+  .backText {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .footerInsta {
+    display: none;
+  }
+}
