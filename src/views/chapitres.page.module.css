@@ -1,0 +1,221 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 52px;
+  min-height: 100vh;
+  background: #f8f7f4;
+  color: #0c0c0b;
+}
+
+/* ── HEADER ─────────────────────────────────────────── */
+.header {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f7f4;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  z-index: 100;
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0c0c0b;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.backArrow {
+  font-size: 18px;
+}
+
+.backText {
+  /* used for responsive hiding */
+}
+
+.logo {
+  position: relative;
+  left: -50%;
+  transform: translateX(50%);
+}
+
+/* ── GALLERY GRID ───────────────────────────────────── */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(318px, 1fr));
+  gap: 24px;
+  padding-top: 110px;
+  padding-bottom: 60px;
+}
+
+/* ── CARD ───────────────────────────────────────────── */
+.card {
+  max-width: 318px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Image container */
+.cardImage {
+  width: 100%;
+  aspect-ratio: 11 / 16;
+  background: #e8e7e4;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Card meta */
+.cardMeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardNumber {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0c0c0b;
+  margin-bottom: 6px;
+}
+
+.cardTitle {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 22px;
+  font-weight: 100;
+  color: #0c0c0b;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+}
+
+/* Timeline row */
+.cardTimeline {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.cardDate {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #0c0c0b;
+  letter-spacing: 0.02em;
+}
+
+.cardArrow {
+  display: flex;
+  flex: 1;
+  margin: 0 12px;
+}
+
+.cardArrow img {
+  width: 100%;
+}
+
+.cardStatus {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  color: #0c0c0b;
+  letter-spacing: 0.01em;
+}
+
+/* ── RESPONSIVE: HORIZONTAL SCROLL ──────────────────── */
+@media (max-width: 768px) {
+  .page {
+    padding: 0 24px;
+  }
+
+  .gallery {
+    flex: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 280px;
+    max-width: 280px;
+  }
+}
+
+/* ── FOOTER ─────────────────────────────────────────── */
+.footer {
+  margin-top: 60px;
+  padding-top: 56px;
+  padding-bottom: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.footerInsta {
+  font-family: "DM Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0c0c0b;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 0 0 260px;
+    max-width: 260px;
+  }
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .backLink {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 568px) {
+  .backText {
+    display: none;
+  }
+}
