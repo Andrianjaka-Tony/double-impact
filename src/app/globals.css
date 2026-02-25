@@ -1,14 +1,107 @@
 @import "tailwindcss";
 
+/* ── OPEN SAUCE TWO ─────────────────────────────────── */
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sauce Two";
+  src: url("../fonts/open-sauce-two/OpenSauceTwo-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ── QUADRANT ────────────────────────────────────────── */
+@font-face {
+  font-family: "Quadrant";
+  src: url("../fonts/quadrant-font-2/quadrant.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quadrant";
+  src: url("../fonts/quadrant-font-2/quadrant-italic.otf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
 @theme inline {
   --color-bg: #f8f7f4;
   --color-ink: #0c0c0b;
   --color-rule: #ccc9c2;
   --color-card-bg: #e8e7e4;
 
-  --font-dm-serif: "DM Serif Display", Georgia, serif;
-  --font-instrument: "Instrument Serif", Georgia, serif;
-  --font-dm-sans: "DM Sans", Helvetica, sans-serif;
+  --font-quadrant: "Quadrant", Georgia, serif;
+  --font-open-sauce: "Open Sauce Two", Helvetica, sans-serif;
 }
 
 *,
@@ -29,4 +122,9 @@ body {
   width: 100%;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+  background: #f8f7f4;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
