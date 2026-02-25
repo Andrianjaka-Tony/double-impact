@@ -1,16 +1,16 @@
 import Image from "next/image";
-import Link from "next/link";
 import s from "./credits.page.module.css";
+import TransitionLink from "@/components/TransitionLink";
 
 export default function CreditsPage() {
   return (
     <div className={s.wrapper}>
       {/* FIXED NAV */}
       <nav className={s.navBack}>
-        <Link href="/" className={s.backLink}>
+        <TransitionLink href="/" className={s.backLink}>
           <span className={s.backArrow}>←</span>
           <span className={s.backText}>Précédent</span>
-        </Link>
+        </TransitionLink>
         <div className={s.navLabel}>Crédits</div>
       </nav>
 
@@ -26,7 +26,8 @@ export default function CreditsPage() {
         <section className={s.section}>
           <h2 className={s.sectionTitle}>La Direction Artistique</h2>
           <div className={s.sectionList}>
-            Jeremy Pichard<br />
+            Jeremy Pichard
+            <br />
             Corentin Bahon
           </div>
         </section>

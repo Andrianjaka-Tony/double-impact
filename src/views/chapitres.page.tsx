@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import s from "./chapitres.page.module.css";
+import TransitionLink from "@/components/TransitionLink";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 const chapters = [
   {
@@ -12,24 +16,84 @@ const chapters = [
     imageAlt: "Bengalore",
     hasArrow: true,
   },
-  { number: "02", title: "????", date: "??.??.????", status: "??.??.????", image: "/placehoderChapitre.png", imageAlt: "autre", hasArrow: false },
-  { number: "03", title: "????", date: "??.??.????", status: "??.??.????", image: "/placehoderChapitre.png", imageAlt: "autre", hasArrow: false },
-  { number: "04", title: "????", date: "??.??.????", status: "??.??.????", image: "/placehoderChapitre.png", imageAlt: "autre", hasArrow: false },
-  { number: "05", title: "????", date: "??.??.????", status: "??.??.????", image: "/placehoderChapitre.png", imageAlt: "autre", hasArrow: false },
-  { number: "06", title: "????", date: "??.??.????", status: "??.??.????", image: "/placehoderChapitre.png", imageAlt: "autre", hasArrow: false },
-  { number: "07", title: "????", date: "??.??.????", status: "??.??.????", image: "/placehoderChapitre.png", imageAlt: "autre", hasArrow: false },
-  { number: "08", title: "????", date: "??.??.????", status: "??.??.????", image: "/placehoderChapitre.png", imageAlt: "autre", hasArrow: false },
+  {
+    number: "02",
+    title: "????",
+    date: "??.??.????",
+    status: "??.??.????",
+    image: "/placehoderChapitre.png",
+    imageAlt: "autre",
+    hasArrow: false,
+  },
+  {
+    number: "03",
+    title: "????",
+    date: "??.??.????",
+    status: "??.??.????",
+    image: "/placehoderChapitre.png",
+    imageAlt: "autre",
+    hasArrow: false,
+  },
+  {
+    number: "04",
+    title: "????",
+    date: "??.??.????",
+    status: "??.??.????",
+    image: "/placehoderChapitre.png",
+    imageAlt: "autre",
+    hasArrow: false,
+  },
+  {
+    number: "05",
+    title: "????",
+    date: "??.??.????",
+    status: "??.??.????",
+    image: "/placehoderChapitre.png",
+    imageAlt: "autre",
+    hasArrow: false,
+  },
+  {
+    number: "06",
+    title: "????",
+    date: "??.??.????",
+    status: "??.??.????",
+    image: "/placehoderChapitre.png",
+    imageAlt: "autre",
+    hasArrow: false,
+  },
+  {
+    number: "07",
+    title: "????",
+    date: "??.??.????",
+    status: "??.??.????",
+    image: "/placehoderChapitre.png",
+    imageAlt: "autre",
+    hasArrow: false,
+  },
+  {
+    number: "08",
+    title: "????",
+    date: "??.??.????",
+    status: "??.??.????",
+    image: "/placehoderChapitre.png",
+    imageAlt: "autre",
+    hasArrow: false,
+  },
 ];
 
 export default function ChapitresPage() {
+  useEffect(() => {
+    gsap.to(`.${s.card}`, { opacity: 1, stagger: 0.05, duration: 0.5, y: 0 });
+  }, []);
+
   return (
     <div className={s.page}>
       {/* HEADER */}
       <header className={s.header}>
-        <Link href="/" className={s.backLink}>
+        <TransitionLink href="/" className={s.backLink}>
           <span className={s.backArrow}>←</span>
           <span className={s.backText}>Précédent</span>
-        </Link>
+        </TransitionLink>
         <div className={s.logo}>
           <Image
             src="/doubleImpact.svg"
@@ -61,7 +125,13 @@ export default function ChapitresPage() {
                 <span className={s.cardDate}>{chapter.date}</span>
                 {chapter.hasArrow ? (
                   <div className={s.cardArrow}>
-                    <Image src="/arrow.svg" alt="" width={130} height={12} style={{ width: "100%" }} />
+                    <Image
+                      src="/arrow.svg"
+                      alt=""
+                      width={130}
+                      height={12}
+                      style={{ width: "100%" }}
+                    />
                   </div>
                 ) : (
                   <div className={s.cardArrow} />

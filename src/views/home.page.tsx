@@ -1,8 +1,22 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import s from "./home.page.module.css";
+import TransitionLink from "@/components/TransitionLink";
+import { MouseEvent } from "react";
+import gsap from "gsap";
 
 export default function HomePage() {
+  const handleMouseOver = (e: MouseEvent) => {
+    const element = document.getElementById("image-hover");
+    gsap.to(element, { opacity: 1, duration: 0.2 });
+  };
+
+  const handleMouseOut = (e: MouseEvent) => {
+    const element = document.getElementById("image-hover");
+    gsap.to(element, { opacity: 0, duration: 0.2 });
+  };
+
   return (
     <div className={s.page}>
       {/* HERO */}
@@ -21,8 +35,10 @@ export default function HomePage() {
       <div className={s.container}>
         <div className={s.left}>
           <p className={s.tagline}>
-            La Cuisine C&rsquo;est Avant Tout Une Histoire De<br />
-            Ressenti Plus Que De Go&ucirc;t.<br />
+            La Cuisine C&rsquo;est Avant Tout Une Histoire De
+            <br />
+            Ressenti Plus Que De Go&ucirc;t.
+            <br />
             C&rsquo;est Tous Nos Sens Qui Sont En Alerte.
           </p>
           <div className={s.menuCol}>
@@ -36,21 +52,37 @@ export default function HomePage() {
             <div className={s.chapterRow}>
               <div>
                 <div className={s.chapterLabel}>Chapitre Actuel</div>
-                <div className={s.chapterName}>0. Prologue</div>
+                <div
+                  onMouseOver={handleMouseOver}
+                  onMouseOut={handleMouseOut}
+                  className={s.chapterName}
+                >
+                  0. Prologue
+                </div>
               </div>
               <div className={s.voirChapitres}>
-                <Link href="/chapitres">Voir tous les chapitres</Link>
+                <TransitionLink href="/chapitres">Voir tous les chapitres</TransitionLink>
               </div>
             </div>
           </div>
           <div className={s.detailsCol}>
             <div className={s.hoursAddr}>
-              <div className={s.hours}>Mar &mdash; Dim<br />19H &mdash; 22H30</div>
-              <div className={s.address}>57 Rue Claude Rodier<br />Paris, 75009</div>
+              <div className={s.hours}>
+                Mar &mdash; Dim
+                <br />
+                19H &mdash; 22H30
+              </div>
+              <div className={s.address}>
+                57 Rue Claude Rodier
+                <br />
+                Paris, 75009
+              </div>
             </div>
 
             <div className={s.ctaRow}>
-              <a className={s.cta} href="#">R&eacute;server</a>
+              <a className={s.cta} href="#">
+                R&eacute;server
+              </a>
               <a className={s.ctaArrow} href="#">
                 Se rendre au restaurant <span className={s.ctaArrowText}>&nbsp;&#x2192;</span>
               </a>
@@ -62,10 +94,14 @@ export default function HomePage() {
       {/* FOOTER */}
       <footer className={s.footer}>
         <span className={s.footerInsta}>@doubleimpact.paris</span>
-        <Link href="/credits">
-          <span className={s.footerCredits}>Cr&eacute;dits</span>
-        </Link>
+        <TransitionLink href="/credits" className={s.footerCredits}>
+          Cr&eacute;dits
+        </TransitionLink>
       </footer>
+
+      <div id="image-hover" style={{ opacity: 0 }} className={s.imageHover}>
+        <img src={"/ChapitreImage.png"} alt="Bengalore" />
+      </div>
     </div>
   );
 }
