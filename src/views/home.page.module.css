@@ -2,10 +2,11 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 0 52px;
+  padding: 0 48px;
   min-height: 100vh;
   background: #f8f7f4;
   color: #0c0c0b;
+  position: relative;
 }
 
 /* ── HERO TITLE ─────────────────────────────────────── */
@@ -169,12 +170,16 @@
 
 /* ── FOOTER ─────────────────────────────────────────── */
 .footer {
-  margin-top: 60px;
-  padding-top: 56px;
-  padding-bottom: 28px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f8f7f4;
+  padding: 56px 48px 28px 48px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 10;
 }
 
 .footerInsta {
@@ -204,7 +209,7 @@
 .imageHover {
   top: 25vh;
   left: 25vw;
-  width: 22rem;
+  width: 323px;
   position: fixed;
   pointer-events: none;
 }
@@ -216,10 +221,16 @@
 
 /* Responsive */
 @media (max-width: 1075px) {
+  .page {
+    padding: 0 48px 15%;
+  }
+
   .container {
     flex-direction: column;
     margin-top: 45px;
-    gap: 254px;
+    gap: 80px;
+    position: relative;
+    min-height: 600px;
   }
 
   .right {
@@ -231,9 +242,21 @@
   .menuCol {
     padding-top: 36px;
   }
+
+  .imageHover {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 500px) {
+  .page {
+    padding: 0 17px 40%;
+  }
   .footer {
     flex-direction: column;
     align-items: center;
@@ -242,5 +265,9 @@
 
   .ctaArrowText {
     display: none;
+  }
+
+  .imageHover {
+    width: 225px;
   }
 }

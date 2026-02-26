@@ -13,6 +13,7 @@ const chapters = [
     date: "16.03.2026",
     status: "Toujours en cours",
     image: "/ChapitreImage.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "Bengalore",
     hasArrow: true,
   },
@@ -22,6 +23,7 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -31,6 +33,7 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -40,6 +43,7 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -49,6 +53,7 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -58,6 +63,7 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -67,6 +73,7 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -76,6 +83,7 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
+    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -94,7 +102,7 @@ export default function ChapitresPage() {
           <span className={s.backArrow}>←</span>
           <span className={s.backText}>Précédent</span>
         </TransitionLink>
-        <div className={s.logo}>
+        <TransitionLink href="/" className={s.logo}>
           <Image
             src="/doubleImpact.svg"
             alt="logo Double Impact"
@@ -102,7 +110,7 @@ export default function ChapitresPage() {
             height={21}
             style={{ width: "clamp(15.3125rem, 9.1938rem + 25.1025vw, 30.625rem)", height: "auto" }}
           />
-        </div>
+        </TransitionLink>
       </header>
 
       {/* GALLERY */}
@@ -117,6 +125,17 @@ export default function ChapitresPage() {
                 height={462}
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
+              <div className={s.blurHover}>
+                <Image
+                src="/logoPicto.svg"
+                alt={chapter.imageAlt}
+                width={50}
+                height={15}
+              />
+              <pre>
+                {chapter.details}
+              </pre>
+              </div>
             </div>
             <div className={s.cardMeta}>
               <div className={s.cardNumber}>{chapter.number}</div>

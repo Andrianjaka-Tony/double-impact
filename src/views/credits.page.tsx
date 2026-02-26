@@ -35,7 +35,7 @@ export default function CreditsPage() {
         {/* Image 1 */}
         <div className={s.sectionImage}>
           <Image
-            src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=500&h=650&fit=crop"
+            src="/creditPlaceholer.png"
             alt="Double Impact card"
             width={266}
             height={346}
@@ -52,7 +52,7 @@ export default function CreditsPage() {
         {/* Image 2 */}
         <div className={`${s.sectionImage} ${s.img2}`}>
           <Image
-            src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=500&h=650&fit=crop"
+            src="/creditPlaceholer.png"
             alt="Double Impact card"
             width={266}
             height={346}
