@@ -14,14 +14,14 @@ export default function CreditsPage() {
         <div className={s.navLabel}>Crédits</div>
       </nav>
 
+      {/* Hero */}
+      <h1 className={s.heroTitle}>MERCI À</h1>
+
       {/* FIXED FOOTER (bottom-left) */}
       <div className={s.footerInsta}>@doubleimpact.paris</div>
 
       {/* SCROLLABLE CONTENT */}
       <main className={s.content}>
-        {/* Hero */}
-        <h1 className={s.heroTitle}>MERCI À</h1>
-
         {/* Direction Artistique */}
         <section className={s.section}>
           <h2 className={s.sectionTitle}>La Direction Artistique</h2>

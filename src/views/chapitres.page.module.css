@@ -1,7 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .page {
+  max-width: 1440px;
   flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   padding: 0 48px 5%;
   min-height: 100vh;
   background: #f8f7f4;
@@ -10,14 +16,15 @@
 
 /* ── HEADER ─────────────────────────────────────────── */
 .header {
+  max-width: 1440px;
   position: fixed;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f8f7f4;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   z-index: 100;
 }
 
@@ -41,10 +48,6 @@
 
 .backArrow {
   font-size: 18px;
-}
-
-.backText {
-  /* used for responsive hiding */
 }
 
 .logo {
@@ -235,6 +238,12 @@
 }
 
 /* Responsive */
+@media (max-width: 568px) {
+  .backText {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .page {
     padding: 0 17px;
@@ -245,18 +254,9 @@
     max-width: 260px;
   }
 
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
   .backLink {
     font-size: 14px;
   }
 }
 
-@media (max-width: 568px) {
-  .backText {
-    display: none;
-  }
-}
+

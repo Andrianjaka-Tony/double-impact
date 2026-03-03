@@ -1,4 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+ 
 .page {
+  max-width: 1440px;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -170,12 +176,13 @@
 
 /* ── FOOTER ─────────────────────────────────────────── */
 .footer {
+  max-width: 1440px;
+  margin: auto;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #f8f7f4;
-  padding: 56px 48px 28px 48px;
+  padding: 10px 48px 28px 48px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -221,12 +228,12 @@
 
 /* Responsive */
 @media (max-width: 1075px) {
-  .page {
+  /* .page {
     padding: 0 48px 15%;
-  }
+  } */
 
   .container {
-    flex-direction: column;
+    display: block;
     margin-top: 45px;
     gap: 80px;
     position: relative;
@@ -254,13 +261,17 @@
 }
 
 @media (max-width: 500px) {
+  .container {
+  display: block;
+}
   .page {
     padding: 0 17px 40%;
   }
   .footer {
-    flex-direction: column;
+    background: #f8f7f4;
+    /* flex-direction: column;
     align-items: center;
-    gap: 31px;
+    gap: 31px; */
   }
 
   .ctaArrowText {
