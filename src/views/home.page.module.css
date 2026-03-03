@@ -1,16 +1,12 @@
-body {
-  display: flex;
-  justify-content: center;
-}
- 
 .page {
+  margin: auto;
   max-width: 1440px;
   flex: 1;
   display: flex;
   flex-direction: column;
   padding: 0 48px;
   min-height: 100vh;
-  background: #f8f7f4;
+  background: #F8F7F4;
   color: #0c0c0b;
   position: relative;
 }
