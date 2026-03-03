@@ -83,7 +83,7 @@ export default function HomePage() {
               <a className={s.cta} href="#">
                 R&eacute;server
               </a>
-              <a className={s.ctaArrow} href="https://maps.app.goo.gl/ebARMiDeyz1Ffz9d7" target="_blank" rel="noopener noreferrer">
+              <a className={s.ctaArrow} href="https://maps.app.goo.gl/hPwcU99mmVB4Qhh99" target="_blank" rel="noopener noreferrer">
                 Se rendre au restaurant <span className={s.ctaArrowText}>&nbsp;&#x2192;</span>
               </a>
             </div>
