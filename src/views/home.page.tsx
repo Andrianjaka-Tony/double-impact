@@ -61,7 +61,9 @@ export default function HomePage() {
                 </div>
               </div>
               <div className={s.voirChapitres}>
-                <TransitionLink href="/chapitres">Voir tous les chapitres</TransitionLink>
+                <TransitionLink href="/chapitres">
+                  Voir tous les chapitres
+                </TransitionLink>
               </div>
             </div>
           </div>
@@ -83,8 +85,14 @@ export default function HomePage() {
               <a className={s.cta} href="#">
                 R&eacute;server
               </a>
-              <a className={s.ctaArrow} href="https://maps.app.goo.gl/hPwcU99mmVB4Qhh99" target="_blank" rel="noopener noreferrer">
-                Se rendre au restaurant <span className={s.ctaArrowText}>&nbsp;&#x2192;</span>
+              <a
+                className={s.ctaArrow}
+                href="https://maps.app.goo.gl/hPwcU99mmVB4Qhh99"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Se rendre au restaurant{" "}
+                <span className={s.ctaArrowText}>&nbsp;&#x2192;</span>
               </a>
             </div>
           </div>
@@ -93,7 +101,15 @@ export default function HomePage() {
 
       {/* FOOTER */}
       <footer className={s.footer}>
-        <span className={s.footerInsta}>@doubleimpact.paris</span>
+        <span className={s.footerInsta}>
+          <a
+            href="https://www.instagram.com/doubleimpact.paris/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @doubleimpact.paris
+          </a>
+        </span>
         <TransitionLink href="/credits" className={s.footerCredits}>
           Cr&eacute;dits
         </TransitionLink>
