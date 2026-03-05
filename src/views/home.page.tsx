@@ -35,9 +35,7 @@ export default function HomePage() {
       <div className={s.container}>
         <div className={s.left}>
           <p className={s.tagline}>
-            La Cuisine C&rsquo;est Avant Tout Une Histoire De
-            <br />
-            Ressenti Plus Que De Go&ucirc;t.
+            La Cuisine C&rsquo;est Avant Tout Une Histoire De Ressenti Plus Que De Go&ucirc;t.
             <br />
             C&rsquo;est Tous Nos Sens Qui Sont En Alerte.
           </p>
