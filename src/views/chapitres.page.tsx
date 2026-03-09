@@ -13,7 +13,8 @@ const chapters = [
     date: "16.03.2026",
     status: "Toujours en cours",
     image: "/ChapitreImage.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "Bengalore",
     hasArrow: true,
   },
@@ -23,7 +24,8 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -33,7 +35,8 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -43,7 +46,8 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -53,7 +57,8 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -63,7 +68,8 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -73,7 +79,8 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -83,7 +90,8 @@ const chapters = [
     date: "??.??.????",
     status: "??.??.????",
     image: "/placehoderChapitre.png",
-    details: "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details:
+      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
     imageAlt: "autre",
     hasArrow: false,
   },
@@ -108,7 +116,10 @@ export default function ChapitresPage() {
             alt="logo Double Impact"
             width={490}
             height={21}
-            style={{ width: "clamp(15.3125rem, 9.1938rem + 25.1025vw, 30.625rem)", height: "auto" }}
+            style={{
+              width: "clamp(15.3125rem, 9.1938rem + 25.1025vw, 30.625rem)",
+              height: "auto",
+            }}
           />
         </TransitionLink>
       </header>
@@ -127,14 +138,12 @@ export default function ChapitresPage() {
               />
               <div className={s.blurHover}>
                 <Image
-                src="/logoPicto.svg"
-                alt={chapter.imageAlt}
-                width={50}
-                height={15}
-              />
-              <pre>
-                {chapter.details}
-              </pre>
+                  src="/logoPicto.svg"
+                  alt={chapter.imageAlt}
+                  width={50}
+                  height={15}
+                />
+                <pre>{chapter.details}</pre>
               </div>
             </div>
             <div className={s.cardMeta}>
@@ -164,7 +173,15 @@ export default function ChapitresPage() {
 
       {/* FOOTER */}
       <footer className={s.footer}>
-        <span className={s.footerInsta}>@doubleimpact.paris</span>
+        <span className={s.footerInsta}>
+          <a
+            href="https://www.instagram.com/doubleimpact.paris/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @doubleimpact.paris
+          </a>
+        </span>
       </footer>
     </div>
   );

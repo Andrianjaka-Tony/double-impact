@@ -18,7 +18,15 @@ export default function CreditsPage() {
       <h1 className={s.heroTitle}>MERCI À</h1>
 
       {/* FIXED FOOTER (bottom-left) */}
-      <div className={s.footerInsta}>@doubleimpact.paris</div>
+      <div className={s.footerInsta}>
+        <a
+          href="https://www.instagram.com/doubleimpact.paris/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @doubleimpact.paris
+        </a>
+      </div>
 
       {/* SCROLLABLE CONTENT */}
       <main className={s.content}>

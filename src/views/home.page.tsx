@@ -99,15 +99,22 @@ export default function HomePage() {
 
       {/* FOOTER */}
       <footer className={s.footer}>
-        <span className={s.footerInsta}>
-          <a
-            href="https://www.instagram.com/doubleimpact.paris/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @doubleimpact.paris
-          </a>
-        </span>
+        <div className={s.footerLeft}>
+          <span className={s.footerPhone}>
+            <a href="tel:+33699804587">
+              +33 6 99 80 45 87
+            </a>
+          </span>
+          <span className={s.footerInsta}>
+            <a
+              href="https://www.instagram.com/doubleimpact.paris/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @doubleimpact.paris
+            </a>
+          </span>
+        </div>
         <TransitionLink href="/credits" className={s.footerCredits}>
           Cr&eacute;dits
         </TransitionLink>

@@ -186,6 +186,32 @@
   z-index: 10;
 }
 
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerPhone {
+  font-family: "Open Sauce Two", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #0c0c0b;
+  cursor: pointer;
+}
+
+.footerPhone a {
+  color: #0c0c0b;
+  text-decoration: none;
+}
+
+.footerPhone a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .footerInsta {
   font-family: "Quadrant", Georgia, serif;
   font-size: 14px;
