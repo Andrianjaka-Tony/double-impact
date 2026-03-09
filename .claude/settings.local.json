@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/Users/tony/Documents/projects/creative/double-impact/src/app/globals.css:*)",
+      "Bash(/Users/tony/Documents/projects/creative/double-impact/src/app/layout.tsx:*)",
+      "Bash(/Users/tony/Documents/projects/creative/double-impact/src/app/chapitres/page.tsx:*)",
+      "Bash(/Users/tony/Documents/projects/creative/double-impact/src/app/credits/page.tsx:*)",
+      "Bash(/Users/tony/Documents/projects/creative/double-impact/next.config.ts:*)",
+      "Bash(npx tsc:*)",
+      "Bash(git reset:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}

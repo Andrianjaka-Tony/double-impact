@@ -80,7 +80,7 @@ export default function HomePage() {
             </div>
 
             <div className={s.ctaRow}>
-              <a className={s.cta} href="#">
+              <a className={s.cta} href="https://bookings.zenchef.com/results?rid=383003" target="_blank" rel="noopener noreferrer">
                 R&eacute;server
               </a>
               <a
