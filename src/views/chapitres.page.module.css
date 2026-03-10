@@ -117,7 +117,7 @@
   white-space: normal;
 }
 
-.blurHover:hover {
+.card:first-child .blurHover:hover {
   opacity: 1;
 }
 
