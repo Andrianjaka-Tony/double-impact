@@ -34,11 +34,11 @@ export default function HomePage() {
       {/* container */}
       <div className={s.container}>
         <div className={s.left}>
-          <p className={s.tagline}>
+          {/* <p className={s.tagline}>
             La Cuisine C&rsquo;est Avant Tout Une Histoire De Ressenti Plus Que De Go&ucirc;t.
             <br />
             C&rsquo;est Tous Nos Sens Qui Sont En Alerte.
-          </p>
+          </p> */}
           <div className={s.menuCol}>
             <div className={s.menuTitle}>Menu Unique &mdash; 95&euro;</div>
             <div className={s.menuSub}>7 Services</div>
@@ -70,7 +70,7 @@ export default function HomePage() {
               <div className={s.hours}>
                 Mar &mdash; Dim
                 <br />
-                19H &mdash; 22H30
+                19H30 &mdash; 21H30
               </div>
               <div className={s.address}>
                 57 Rue Claude Rodier
