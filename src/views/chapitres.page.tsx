@@ -13,19 +13,13 @@ const chapters = [
     date: "16.03.2026",
     status: "Toujours en cours",
     image: "/ChapitreImage.png",
-    details: `Etienne et Mickaël se rencontrent il y a plus de dix ans dans le Morbihan.
-Sans imaginer l’importance de ce moment, très vite, ils partagent une même passion pour la
-cuisine, le service et ces lieux où l’on se retrouve autour d’une table..
-Au fil des années, leur amitié se renforce tandis que leur passion devient vocation.
-Puis vient le moment de partir faire ses armes. Chacun prend sa route, multiplie les
-expériences, apprend ailleurs, auprès de ces maisons où le métier se pense et se vit
-autrement.
-Mais certaines idées continuent de grandir en silence.
-Quelques années plus tard, leurs chemins les réunit, ici à Paris.
-L’envie de créer un lieu à leur image s’impose alors naturellement.
-Ainsi naît Double Impact.
-Un lieu en mouvement, vivant, pensé comme une expérience où chacun viendra écrire son
-récit, son chapitre.`,
+    details: `L’histoire de Double Impact naît il y a plus de dix ans dans le Morbihan, où Etienne et Mickael se rencontrent. 
+    
+    Rapidement, ils partagent une même passion pour la cuisine, le service et les lieux de vie.
+    
+    Les années passent, leur lien se renforce, chacun forge son expérience. Puis à Paris, leurs chemins se recroisent. 
+    
+    Une évidence s’impose : créer ensemble. Double Impact devient alors un lieu vivant où chaque repas raconte une histoire.`,
     imageAlt: "Bengalore",
     hasArrow: true,
   },
