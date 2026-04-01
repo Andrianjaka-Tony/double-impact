@@ -70,7 +70,7 @@ export default function HomePage() {
               <div className={s.hours}>
                 Mar &mdash; Dim
                 <br />
-                19H30 &mdash; 21H30
+                19H &mdash; 21H30
               </div>
               <div className={s.address}>
                 57 Rue Claude Rodier
