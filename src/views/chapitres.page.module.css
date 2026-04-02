@@ -114,7 +114,7 @@
   color: #fff;
   letter-spacing: 1px;
   line-height: normal;
-  white-space: normal;
+  white-space: pre-line;
 }
 
 .card:first-child .blurHover:hover {

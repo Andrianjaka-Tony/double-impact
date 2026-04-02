@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "npx serve@latest out"
+    "start": "npx serve@latest out",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "gsap": "^3.14.2",

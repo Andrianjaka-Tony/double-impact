@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import s from "./chapitres.page.module.css";
 import TransitionLink from "@/components/TransitionLink";
 import { useEffect } from "react";
@@ -13,8 +12,13 @@ const chapters = [
     date: "16.03.2026",
     status: "Toujours en cours",
     image: "/ChapitreImage.png",
-    details:
-      "Lorem ipsum dolor sit amet consectetur. Mattis fermentum enim eget bibendum. Netus viverra vel viverra amet rutrum egestas est in. Donec lectus justo nibh laoreet felis id donec elementum purus. Non nibh malesuada quis eget. Nunc adipiscing lacus netus sit. Consectetur malesuada varius.",
+    details: `L’histoire de Double Impact naît il y a plus de dix ans dans le Morbihan, où Etienne et Mickael se rencontrent. 
+    
+    Rapidement, ils partagent une même passion pour la cuisine, le service et les lieux de vie.
+    
+    Les années passent, leur lien se renforce, chacun forge son expérience. Puis à Paris, leurs chemins se recroisent. 
+    
+    Une évidence s’impose : créer ensemble. Double Impact devient alors un lieu vivant où chaque repas raconte une histoire.`,
     imageAlt: "Bengalore",
     hasArrow: true,
   },
@@ -111,7 +115,7 @@ export default function ChapitresPage() {
           <span className={s.backText}>Précédent</span>
         </TransitionLink>
         <TransitionLink href="/" className={s.logo}>
-          <Image
+          <img
             src="/doubleImpact.svg"
             alt="logo Double Impact"
             width={490}
@@ -129,7 +133,7 @@ export default function ChapitresPage() {
         {chapters.map((chapter) => (
           <article key={chapter.number} className={s.card}>
             <div className={s.cardImage}>
-              <Image
+              <img
                 src={chapter.image}
                 alt={chapter.imageAlt}
                 width={318}
@@ -137,12 +141,7 @@ export default function ChapitresPage() {
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
               <div className={s.blurHover}>
-                <Image
-                  src="/logoPicto.svg"
-                  alt={chapter.imageAlt}
-                  width={50}
-                  height={15}
-                />
+                <img src="/logoPicto.svg" alt={chapter.imageAlt} width={50} height={15} />
                 <pre>{chapter.details}</pre>
               </div>
             </div>
@@ -153,7 +152,7 @@ export default function ChapitresPage() {
                 <span className={s.cardDate}>{chapter.date}</span>
                 {chapter.hasArrow ? (
                   <div className={s.cardArrow}>
-                    <Image
+                    <img
                       src="/arrow.svg"
                       alt=""
                       width={130}
