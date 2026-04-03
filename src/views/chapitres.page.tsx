@@ -8,7 +8,7 @@ import gsap from "gsap";
 const chapters = [
   {
     number: "01",
-    title: "BENGALORE",
+    title: "PROLOGUE",
     date: "16.03.2026",
     status: "Toujours en cours",
     image: "/ChapitreImage.png",
