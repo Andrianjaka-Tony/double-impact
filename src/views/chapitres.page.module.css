@@ -97,7 +97,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #00000000;
+  background: #00000066;
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -112,7 +112,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   line-height: normal;
   white-space: pre-line;
 }
@@ -252,6 +252,14 @@
 
   .backLink {
     font-size: 14px;
+  }
+
+  .blurHover {
+    padding: 12px;
+  }
+
+  .blurHover > pre {
+    font-size: 12px;
   }
 }
 
