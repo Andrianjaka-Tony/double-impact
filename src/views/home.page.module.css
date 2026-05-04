@@ -98,6 +98,16 @@
   padding-top: 115px;
 } */
 
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.menuItem + .menuItem {
+  margin-top: 10px;
+}
+
 .menuTitle {
   font-family: "Quadrant", Georgia, serif;
   font-size: clamp(1rem, 0.8566rem + 0.5882vw, 1.25rem);

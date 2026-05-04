@@ -40,8 +40,18 @@ export default function HomePage() {
             C&rsquo;est Tous Nos Sens Qui Sont En Alerte.
           </p> */}
           <div className={s.menuCol}>
-            <div className={s.menuTitle}>Menu Unique &mdash; 95&euro;</div>
-            <div className={s.menuSub}>7 Services</div>
+            <div className={s.menuItem}>
+              <div className={s.menuTitle}>
+                Menu <span style={{ paddingRight: "2px" }}>7</span> temps &mdash; 95&euro;
+              </div>
+              <div className={s.menuSub}>Accords &mdash; 55&euro;</div>
+            </div>
+            <div className={s.menuItem}>
+              <div className={s.menuTitle}>
+                Menu <span style={{ paddingRight: "2px" }}>5</span> temps &mdash; 75&euro;
+              </div>
+              <div className={s.menuSub}>Accords &mdash; 45&euro;</div>
+            </div>
           </div>
         </div>
 
@@ -59,9 +69,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className={s.voirChapitres}>
-                <TransitionLink href="/chapitres">
-                  Voir tous les chapitres
-                </TransitionLink>
+                <TransitionLink href="/chapitres">Voir tous les chapitres</TransitionLink>
               </div>
             </div>
           </div>
@@ -80,7 +88,12 @@ export default function HomePage() {
             </div>
 
             <div className={s.ctaRow}>
-              <a className={s.cta} href="https://bookings.zenchef.com/results?rid=383003" target="_blank" rel="noopener noreferrer">
+              <a
+                className={s.cta}
+                href="https://bookings.zenchef.com/results?rid=383003"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 R&eacute;server
               </a>
               <a
@@ -89,8 +102,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Se rendre au restaurant{" "}
-                <span className={s.ctaArrowText}>&nbsp;&#x2192;</span>
+                Se rendre au restaurant <span className={s.ctaArrowText}>&nbsp;&#x2192;</span>
               </a>
             </div>
           </div>
@@ -101,9 +113,7 @@ export default function HomePage() {
       <footer className={s.footer}>
         <div className={s.footerLeft}>
           <span className={s.footerPhone}>
-            <a href="tel:+33699804587">
-              +33 6 99 80 45 87
-            </a>
+            <a href="tel:+33699804587">+33 6 99 80 45 87</a>
           </span>
           <span className={s.footerInsta}>
             <a

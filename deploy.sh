@@ -2,7 +2,7 @@
 
 set -e
 
-SSH_HOST="restatw@ssh.cluster100.hosting.ovh.net"
+SSH_HOST="ovh-double-impact"
 SSH_PORT="22"
 REMOTE_DIR="~/www"
 LOCAL_OUT="./out"
@@ -14,7 +14,7 @@ echo "→ Nettoyage du serveur..."
 ssh -p $SSH_PORT $SSH_HOST "rm -rf $REMOTE_DIR/* $REMOTE_DIR/.[^.]*" || true
 
 echo "→ Upload des fichiers..."
-rsync -avz -e "ssh -p $SSH_PORT" \
+rsync -avz -e "ssh" \
   --exclude="*.txt" \
   --exclude="chapitres/" \
   --exclude="credits/" \
