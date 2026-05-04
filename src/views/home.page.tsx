@@ -125,9 +125,9 @@ export default function HomePage() {
             </a>
           </span>
         </div>
-        <TransitionLink href="/credits" className={s.footerCredits}>
+        {/* <TransitionLink href="/credits" className={s.footerCredits}>
           Cr&eacute;dits
-        </TransitionLink>
+        </TransitionLink> */}
       </footer>
 
       <div id="image-hover" style={{ opacity: 0 }} className={s.imageHover}>
